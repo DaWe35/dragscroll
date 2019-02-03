@@ -47,7 +47,7 @@
                         obj = e.target
                         noteEditableChild = false
                         while (obj != undefined && obj != null && obj.tagName.toUpperCase() != 'BODY'){
-                            if (classList.contains("note-editable")){
+                            if (obj.classList.contains("note-editable")){
                                 noteEditableChild = true
                             }
                             obj = obj.parentNode;
