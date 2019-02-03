@@ -1,5 +1,19 @@
-dragscroll
+DaWe's dragscroll
 ==========
+
+
+
+### Changes
+
+
+This is a forked version on asvd's dragscroll. Added features:
+
+- Cursor style changes to "all-scroll" on mousedown.
+- Scroll disabled on all input, textarea, select fields.
+
+
+### Description
+
 
 Dragscroll is a micro JavaScript library (910 bytes minified) which
 enables scrolling via holding the mouse button ("drag and drop" or
@@ -55,7 +69,5 @@ for its subchildren. This can be usefull, if you want to enable the
 scrolling the area by dragging its empty space, but keep the
 opportunity to select the text (see
 [example](http://asvd.github.io/jailed/demos/web/process/)).
-
--
 
 Follow me on twitter: https://twitter.com/asvd0
