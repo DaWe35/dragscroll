@@ -43,9 +43,20 @@
                 (cont = el.container || el)[addEventListener](
                     mousedown,
                     cont.md = function(e) {
+
+                        obj = e.target
+                        noteEditableChild = false
+                        while (obj != undefined && obj != null && obj.tagName.toUpperCase() != 'BODY'){
+                            if (classList.contains("note-editable")){
+                                noteEditableChild = true
+                            }
+                            obj = obj.parentNode;
+                        }
+                        
                         if (e.target.tagName === "SELECT"
                           || e.target.tagName === "INPUT"
                           || e.target.tagName === "TEXTAREA"
+                          || noteEditableChild
                         ) {                      
                             return true
                         }
